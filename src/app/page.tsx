@@ -57,11 +57,7 @@ export default function Page() {
           onClick={connect}
           disabled={status==="loading"}
           className="text-white font-serif inline-flex items-center justify-center rounded-2xl px-4 py-3 bg-zinc-800/50 hover:bg-zinc-700/60 border border-white/10 backdrop-blur-sm transition-all duration-300">
-                   {status==="idle" && "Connect"}
-                   {status==="loading" && "Connecting..."}
-                   {status==="done" && "Connected"}
-                   {status==="error" && "Retry"}
-          Connect Apple Music Account
+                    Connect Apple Music Account
           </PulsatingButton>
           {err && <p className="text-sm text-red-400">{err}</p>}
 
