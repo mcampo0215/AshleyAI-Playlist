@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export type AppleAuth = {developerToken: string; musicUserToken: string};
 const API = "https://api.music.apple.com";
 

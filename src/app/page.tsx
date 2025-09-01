@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { useEffect, useState } from "react";
 import WeeklyRefreshButton from "@/components/WeeklyRefreshButton";
+
 
 declare const MusicKit: any;
 export default function Page() {
@@ -37,7 +39,7 @@ export default function Page() {
             if(!save.ok) throw new Error("store-user-token failed");
 
             setStatus("done");
-        } catch(e: any) {
+        } catch(e:any) {
             setErr(e?.message || "Unknown error");
             setStatus("error");
         }

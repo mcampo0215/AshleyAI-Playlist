@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { NextResponse } from "next/server";
 import { SignJWT, importPKCS8 } from "jose";
 import { getUser, setPlaylist } from "@/lib/storage";

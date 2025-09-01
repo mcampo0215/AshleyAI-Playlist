@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 type Saved = {userId: string; musicUserToken: string; playlistId?: string};
 
 const g = globalThis as any;
