@@ -62,8 +62,6 @@ export default function Page() {
           {err && <p className="text-sm text-red-400">{err}</p>}
 
           <WeeklyRefreshButton></WeeklyRefreshButton>
-
-          <div className="flex items-center"></div>
       </div>
     </div>
   )
